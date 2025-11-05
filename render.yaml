@@ -8,13 +8,9 @@ services:
     autoDeploy: true
     envVars:
       - key: GENERIC_TIMEZONE
-        value: America/Bogota # <-- Cambia esto si es necesario
+        value: America/Bogota
       - key: WEBHOOK_URL
         fromService:
           type: web
           name: n8n
           envVarKey: RENDER_EXTERNAL_URL
-    disk:
-      name: n8n-data
-      mountPath: /home/node/.n8n
-      sizeGB: 1
