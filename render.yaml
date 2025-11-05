@@ -6,12 +6,12 @@ services:
       url: n8nio/n8n:latest # Usa la imagen oficial de n8n
     plan: free # 'free' o 'starter'
     autoDeploy: true # Despliega automáticamente si cambias este archivo
-
+    
     # Variables de entorno para n8n
     envVars:
       - key: GENERIC_TIMEZONE
         value: America/Bogota # ¡IMPORTANTE! Cambia esto a tu zona horaria
-
+      
       # Asigna dinámicamente la URL de Render a n8n
       # Esto es crucial para que los webhooks funcionen
       - key: WEBHOOK_URL
@@ -19,7 +19,7 @@ services:
           type: web
           name: n8n
           envVarKey: RENDER_EXTERNAL_URL
-
+          
     # Conecta el disco persistente
     disk:
       name: n8n-data
