@@ -9,4 +9,3 @@ services:
     envVars:
       - key: GENERIC_TIMEZONE
         value: America/Bogota
-
