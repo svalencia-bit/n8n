@@ -9,4 +9,4 @@ services:
       - key: GENERIC_TIMEZONE
         value: America/Bogota
       - key: WEBHOOK_TUNNEL_URL
-        value: https://n8n-service-y0ej.onrender.com
+        value: https://n8n-service-y0ej.onrender.com/workflow/UAwk2mKsitqau5jX
