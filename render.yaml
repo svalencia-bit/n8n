@@ -9,8 +9,4 @@ services:
     envVars:
       - key: GENERIC_TIMEZONE
         value: America/Bogota
-      - key: WEBHOOK_URL
-        fromService:
-          type: web
-          name: n8n
-          envVarKey: RENDER_EXTERNAL_URL
+
