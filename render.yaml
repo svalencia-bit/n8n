@@ -6,3 +6,6 @@ services:
       url: n8nio/n8n:latest
     plan: free
     autoDeploy: true
+    envVars:
+      - key: GENERIC_TIMEZONE
+        value: America/Bogota
